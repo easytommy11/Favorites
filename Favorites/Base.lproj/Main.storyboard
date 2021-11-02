@@ -16,26 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ADS-Bz-Nlq">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="633"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ADS-Bz-Nlq">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sVv-uo-UG2">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="211"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="600"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="250" id="Qws-ZA-LYC"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="eMf-Jd-3Gz"/>
+                                            <constraint firstAttribute="width" secondItem="sVv-uo-UG2" secondAttribute="height" multiplier="13:20" id="1cR-vb-y9V"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="600" id="eMf-Jd-3Gz"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeC-L7-t6s">
-                                        <rect key="frame" x="0.0" y="211" width="390" height="211"/>
+                                        <rect key="frame" x="174.33333333333334" y="600" width="41.333333333333343" height="20.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqy-Qj-rEo">
-                                        <rect key="frame" x="0.0" y="422" width="390" height="211"/>
+                                        <rect key="frame" x="161.66666666666666" y="620.33333333333337" width="67" height="223.66666666666663"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zcz-Py-2x8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -52,6 +55,10 @@
                             <constraint firstAttribute="bottom" secondItem="ADS-Bz-Nlq" secondAttribute="bottom" id="uAH-UW-Jqc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Label" destination="AeC-L7-t6s" id="g0U-n4-yWW"/>
+                        <outlet property="imageView" destination="sVv-uo-UG2" id="RCz-Vc-hO7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
