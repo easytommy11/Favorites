@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var images: [UIImage] = [#imageLiteral(resourceName: "Power1"), #imageLiteral(resourceName: "You"), #imageLiteral(resourceName: "power"), #imageLiteral(resourceName: "naruto"), #imageLiteral(resourceName: "allAmerican")]
     var heading: [String] = ["Power", "You", "Power:Book II", "Naruto", "All American"]
 
+    @IBOutlet var button1: UIButton!
     var position = 0
     
    
@@ -32,8 +33,6 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
         // Do any additional setup after loading the view.
     }
 
